@@ -1,0 +1,67 @@
+.seccion1Container {
+    position: relative;
+    padding: 7rem 0 7rem 10rem;
+    font-family: 'sora';
+    height: 55vh;
+}
+
+.seccion1Container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../assets/cables.webp');
+    filter: brightness(0.4); 
+    z-index: -1; 
+}
+
+.seccion1Container h1 {
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    max-width: 10rem;
+    font-weight: 900;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.seccion1Container p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    max-width: 30%;
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+}
+.seccion1Container button{
+    background-color: rgb(37,211,102);
+    border: none;
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+.seccion1Text button img{
+    max-width: 1rem;
+}
+.seccion1Text button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media(max-width: 768px){
+    .seccion1Container{
+        padding-left: 1rem;
+        margin-top: 2rem;
+    }
+    .seccion1Container h1{
+        font-size: 3rem;
+        line-height: 50px;
+    }
+    .seccion1Container p{
+        max-width: 90%;
+    }
+}

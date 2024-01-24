@@ -1,0 +1,26 @@
+.galeriaTrabajos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.containerTrabajos h1{
+    font-family: 'sora';
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.trabajoContainer img {
+    width: 100%; 
+    height: 40vh;
+    object-fit: cover; 
+}
+
+@media(max-width: 768px){
+    .galeriaTrabajos{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+    }
+}

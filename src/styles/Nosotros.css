@@ -1,0 +1,49 @@
+.nosotrosContainer{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-family: 'sora';
+    background-color: rgb(246,246,246);
+}
+
+.containerTextNosotros{
+    width: 30%;
+    padding: 5rem 0;
+}
+.containerTextNosotros h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+    font-weight: 800;
+    color: rgb(70, 70, 70);
+}
+.containerTextNosotros p{
+    font-size: 1.1rem;
+    color: gray;
+}
+
+.containerImagenNosotros img{
+    border-radius: 1rem;
+}
+
+@media(max-width: 768px){
+    .nosotrosContainer{
+        flex-direction: column;
+        gap: 0;
+    }
+    .containerTextNosotros{
+        width: 80%;
+        padding: 0;
+    }
+    .containerTextNosotros h1{
+        font-size: 3rem;
+    }
+    .containerImagenNosotros{
+        max-width: 80%;
+        padding-top: 4rem;
+    }
+    .containerImagenNosotros img{
+        width: 100%;
+    }
+}

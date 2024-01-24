@@ -1,0 +1,86 @@
+.contactoContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    font-family: 'sora';
+    margin-bottom: 5rem;
+    color: white;
+
+}
+.contactoContainer h1{
+    margin-bottom: 0;
+    font-size: 4.5rem;
+}
+.contactoContainer h3{
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.formContacto form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+    max-width: 50%;
+}
+.formContacto input{
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    color: rgb(62, 62, 62);
+    border: none;
+}
+
+.formContacto button{
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    background-color: #02334b;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem ;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+.sideA{
+    background-color: #8ecae6;
+    width: 30%;
+}
+.sideB{
+    background-color: #219ebc;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 10rem;
+    padding-bottom: 10rem;
+}
+
+
+#double, #message{
+    grid-column: span 2;
+}
+#message{
+    padding-bottom: 4rem;
+}
+
+@media(max-width: 768px){
+    .formContacto form{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .sideB{
+        padding-left: 2rem;
+    }
+    .contactoContainer h1{
+        font-size: 3rem;
+    }
+    .contactoContainer h3{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+   
+}

@@ -1,0 +1,97 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    height: auto;
+    font-family: 'sora';
+}
+
+.logoContainer img {
+    max-width: 8vw;
+}
+
+.linksContainer a {
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(59, 59, 59);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.linksContainer a:hover {
+    border-bottom: 2px solid rgb(83, 83, 246);
+}
+
+.linksContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#contact {
+    background-color: rgb(107, 107, 246);
+    padding: 0.5rem 2rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+
+.linksContainerMobile,
+.desplegable {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .desplegable {
+        font-family: 'sora';
+        display: flex !important;
+        flex-direction: column !important;
+        padding-left: 1rem;
+        margin-top: 2rem;
+
+    }
+
+    #contact {
+        max-width: 50%;
+    }
+
+
+    .linksContainerMobile {
+        display: flex;
+    }
+
+    .linksContainerMobile img {
+        max-width: 80%;
+    }
+
+    .logoContainer {
+        padding-left: 2rem;
+        max-width: 50%;
+
+    }
+
+    .linksContainer {
+        display: none;
+    }
+
+    .desplegable a {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        color: gray;
+        font-weight: 500;
+        text-decoration: none !important;
+
+    }
+
+    .logoContainer img {
+        max-width: 80%;
+        padding-bottom: 1rem;
+    }
+
+}

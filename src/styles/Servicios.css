@@ -1,0 +1,66 @@
+.serviciosContainer {
+    font-family: 'sora';
+    margin-top: 3rem;
+}
+
+.serviciosText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviciosText h1 {
+    margin-bottom: 0;
+    color: rgb(40, 40, 40);
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.serviciosText h3 {
+    max-width: 60%;
+    text-align: center;
+    color: rgb(84, 84, 84);
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.serviciosList {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.cardServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardServicios img {
+    width: 20%;
+}
+
+.cardServicios h2 {
+    margin-bottom: 0;
+    text-align: center;
+    color: rgb(74, 74, 74);
+}
+
+.cardServicios p {
+    font-size: 1.1rem;
+    max-width: 80%;
+    text-align: center;
+    color: gray;
+}
+
+@media(max-width: 768px){
+    .serviciosList{
+        display: flex;
+        flex-direction: column;
+    }
+}
