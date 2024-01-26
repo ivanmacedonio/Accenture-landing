@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import imagen from "../assets/procesador.webp";
 import "../styles/Nosotros.css";
@@ -7,7 +8,12 @@ export const Nosotros = () => {
       <div className="containerImagenNosotros">
         <img src={imagen} alt="" />
       </div>
-      <div className="containerTextNosotros">
+      <motion.div
+        className="containerTextNosotros"
+        initial={{ x: 120, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <h1>Nosotros</h1>
         <p>
           Nos enfocamos en ofrecer soluciones integrales para optimizar el
@@ -23,7 +29,7 @@ export const Nosotros = () => {
           usuario de alta calidad y en asegurarnos de que su empresa cuente con
           un entorno tecnológico confiable y seguro.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

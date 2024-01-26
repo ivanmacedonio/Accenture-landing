@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import img1 from "../assets/1.jpg";
 import img2 from "../assets/2.jpg";
@@ -9,40 +10,33 @@ import img7 from "../assets/7.jpg";
 import img8 from "../assets/8.jpg";
 import img9 from "../assets/9.jpg";
 
-
 import "../styles/Trabajos.css";
+const AnimatedImage = ({ imgSrc }) => {
+  return (
+    <motion.div
+      className="trabajoContainer"
+      initial={{ scale: 0, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <img src={imgSrc} alt="" />
+    </motion.div>
+  );
+};
 export const Trabajos = () => {
   return (
     <div className="containerTrabajos">
       <h1>Galería de nuestros trabajos</h1>
       <div className="galeriaTrabajos">
-        <div className="trabajoContainer">
-          <img src={img1} alt="" />
-        </div>
-        <div className="trabajoContainer">
-          <img src={img2} alt="" />
-        </div>
-        <div className="trabajoContainer">
-          <img src={img3} alt="" />
-        </div>
-        <div className="trabajoContainer">
-          <img src={img4} alt="" />
-        </div>
-        <div className="trabajoContainer">
-          <img src={img5} alt="" />
-        </div>
-        <div className="trabajoContainer">
-          <img src={img6} alt="" />
-        </div>
-        <div className="trabajoContainer">
-          <img src={img7} alt="" />
-        </div>
-        <div className="trabajoContainer">
-          <img src={img8} alt="" />
-        </div>
-        <div className="trabajoContainer">
-          <img src={img9} alt="" />
-        </div>
+        <AnimatedImage imgSrc={img1} />
+        <AnimatedImage imgSrc={img2} />
+        <AnimatedImage imgSrc={img3} />
+        <AnimatedImage imgSrc={img4} />
+        <AnimatedImage imgSrc={img5} />
+        <AnimatedImage imgSrc={img6} />
+        <AnimatedImage imgSrc={img7} />
+        <AnimatedImage imgSrc={img8} />
+        <AnimatedImage imgSrc={img9} />
       </div>
     </div>
   );

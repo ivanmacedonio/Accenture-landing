@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import google from "../assets/google.svg";
 import "../styles/Clientes.css";
@@ -5,7 +6,12 @@ export const Clientes = () => {
   return (
     <div className="clientesContainer" id="hrefclientes">
       <h1>Clientes conformes</h1>
-      <div className="clientesListContainer">
+      <motion.div
+        className="clientesListContainer"
+        initial={{ y: 120, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className="listClientes">
           <p>
             {" "}
@@ -13,10 +19,10 @@ export const Clientes = () => {
             muchos consejos para mantener mi equipo actualizado. Para recomendar
             realmente
           </p>
-            <label>
-              <img src={google} alt="" />
-              <h2>Brian A.</h2>
-            </label>
+          <label>
+            <img src={google} alt="" />
+            <h2>Brian A.</h2>
+          </label>
         </div>
         <div className="listClientes">
           <p>
@@ -42,7 +48,7 @@ export const Clientes = () => {
             <h2>Miguel Aguilera.</h2>
           </label>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,8 +1,9 @@
+import { motion } from "framer-motion";
 import React from "react";
-import cableado from '../assets/cableadop.svg';
+import cableado from "../assets/cableadop.svg";
 import control from "../assets/control.svg";
 import hand from "../assets/hand.svg";
-import licencia from '../assets/licencia.svg';
+import licencia from "../assets/licencia.svg";
 import lock from "../assets/lock.svg";
 import pc from "../assets/pc.svg";
 import "../styles/Servicios.css";
@@ -18,7 +19,12 @@ export const Servicios = () => {
         </h3>
       </div>
 
-      <div className="serviciosList">
+      <motion.div
+        className="serviciosList"
+        initial={{ y: 120, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className="cardServicios">
           <img src={pc} alt="" />
           <h2>Servicio Técnico</h2>
@@ -68,7 +74,7 @@ export const Servicios = () => {
             informe de tu estado actual del licenciamiento de software
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
