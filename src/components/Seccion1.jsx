@@ -1,5 +1,5 @@
 import React from "react";
-import wp from '../assets/wp.svg';
+import arrow from '../assets/arrow.svg';
 import "../styles/Seccion1.css";
 export const Seccion1 = () => {
   return (
@@ -11,7 +11,10 @@ export const Seccion1 = () => {
           seguridad de las computadoras de nuestros clientes en CABA y Buenos
           Aires.{" "}
         </p>
-        <button>Whatsapp <img src={wp} alt="" /></button>
+        <label>
+        <img src={arrow} alt="" />
+        <a href="#hrefnosotros">Ver más</a>
+        </label>
       </div>
     </div>
   );

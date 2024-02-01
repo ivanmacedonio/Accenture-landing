@@ -1,7 +1,7 @@
 .seccion1Container {
     position: relative;
     padding: 7rem 0 7rem 10rem;
-    font-family: 'sora';
+    font-family: 'montserrat';
     height: 55vh;
 }
 
@@ -16,12 +16,33 @@
     filter: brightness(0.4); 
     z-index: -1; 
 }
+.seccion1Container img{
+    max-width: 2.5rem;
+}
+.seccion1Container label{
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    max-width: 13%;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0;
+}
+.seccion1Container label a{
+    font-size: 1rem;
+    color: rgb(43, 43, 43);
+    font-weight: 700;
+    text-decoration: none;
+}
+
 
 .seccion1Container h1 {
     font-size: 5rem;
     color: rgb(255, 255, 255);
     max-width: 10rem;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 80px;
     margin-bottom: 20px;
 }
@@ -63,5 +84,8 @@
     }
     .seccion1Container p{
         max-width: 90%;
+    }
+    .seccion1Container label{
+        max-width: 60%;
     }
 }

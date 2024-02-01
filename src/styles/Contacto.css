@@ -1,19 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .contactoContainer{
     display: flex;
     flex-direction: row;
     margin-top: 5rem;
-    font-family: 'sora';
+    font-family: 'Montserrat';
     color: white;
 
 }
 .contactoContainer h1{
     margin-bottom: 0;
     font-size: 4.5rem;
+    font-weight: 800;
+    max-width: 30%;
+    line-height: 60px;
 }
 .contactoContainer h3{
-    margin-top: 5px;
+    margin-top: 15px;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .formContacto form{
@@ -21,16 +26,28 @@
     grid-template-columns: repeat(2,1fr);
     column-gap: 2rem;
     row-gap: 1rem;
-    max-width: 50%;
+    max-width: 80%;
+    margin-top: 2rem;
 }
 .formContacto input{
     font-size: 1.2rem;
     outline: none;
     padding: 0.5rem;
     border-radius: 0.3rem;
-    color: rgb(62, 62, 62);
+    color: rgb(255, 255, 255);
     border: none;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
 }
+.formContacto input::placeholder{
+    color: transparent
+}
+.formContacto p{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
 
 .formContacto button{
     font-size: 1.3rem;
@@ -42,6 +59,7 @@
     padding: 0.5rem ;
     border-radius: 0.6rem;
     cursor: pointer;
+    margin-top: 2rem;
 }
 .sideA{
     background-color: #8ecae6;
@@ -60,8 +78,8 @@
 #double, #message{
     grid-column: span 2;
 }
-#message{
-    padding-bottom: 4rem;
+#message input{
+    padding-bottom: 5rem;
 }
 
 @media(max-width: 768px){
@@ -75,7 +93,9 @@
         padding-left: 2rem;
     }
     .contactoContainer h1{
-        font-size: 3rem;
+        font-size: 2.2rem;
+        line-height: 35px;
+        margin-top: 3rem;
     }
     .contactoContainer h3{
         font-size: 1rem;
